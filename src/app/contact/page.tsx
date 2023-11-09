@@ -104,7 +104,7 @@ export default function Contact() {
       />
       <div className="max-w-xl mx-auto">
         <form
-          className="flex flex-col gap-4 w-full "
+          className="flex flex-col gap-4 w-full bg-base-100 p-6 rounded-lg shadow-lg"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div>
@@ -116,7 +116,7 @@ export default function Contact() {
               id="name"
               type="text"
               placeholder="Type here"
-              className="input input-bordered input-primary w-full"
+              className="input input-bordered input-accent w-full"
             />
             {errors.name && (
               <span className="label-text-alt text-error">
@@ -133,7 +133,7 @@ export default function Contact() {
               id="email"
               type="email"
               placeholder="Type here"
-              className="input input-bordered input-primary w-full"
+              className="input input-bordered input-accent w-full"
             />
             {errors.email && (
               <span className="label-text-alt text-error">
@@ -150,7 +150,7 @@ export default function Contact() {
               id="subject"
               type="text"
               placeholder="Type here"
-              className="input input-bordered input-primary w-full"
+              className="input input-bordered input-accent w-full"
             />
             {errors.subject && (
               <span className="label-text-alt text-error">
@@ -167,7 +167,7 @@ export default function Contact() {
               id="message"
               name="message"
               placeholder="Type here"
-              className="textarea textarea-bordered textarea-primary w-full "
+              className="textarea textarea-bordered textarea-accent w-full"
             />
             {errors.message && (
               <span className="label-text-alt text-error">
@@ -175,7 +175,7 @@ export default function Contact() {
               </span>
             )}
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary hover:opacity-80">
             {isSubmitting ? (
               <span className="loading loading-dots"></span>
             ) : (
