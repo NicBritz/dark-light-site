@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { data } from "../../../data/projects";
 import Image from "next/image";
-import { Loader } from "@/components/Loader";
 
 export default function Page({
   params,
