@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa6";
 import Image from "next/image";
 
 export default function Socials() {
@@ -11,13 +12,7 @@ export default function Socials() {
           target="_blank"
           data-testid="linkedin"
         >
-          <Image
-            className="hover:opacity-80 transition-opacity"
-            src="/linkedin.webp"
-            width={42}
-            height={42}
-            alt="linkedin icon"
-          />
+          <FaLinkedin className="text-5xl hover:opacity-80 transition-opacity text-primary" />
         </Link>
       </li>
       <li>
@@ -27,13 +22,7 @@ export default function Socials() {
           target="_blank"
           data-testid="github"
         >
-          <Image
-            className="hover:opacity-80 transition-opacity"
-            src="/github.webp"
-            width={42}
-            height={42}
-            alt="github icon"
-          />
+          <FaGithub className="text-5xl hover:opacity-80 transition-opacity text-primary" />
         </Link>
       </li>
       <li>
@@ -43,13 +32,7 @@ export default function Socials() {
           target="_blank"
           data-testid="mail"
         >
-          <Image
-            className="hover:opacity-80 transition-opacity"
-            src="/mail.webp"
-            width={42}
-            height={42}
-            alt="mail icon"
-          />
+          <FaEnvelope className="text-5xl hover:opacity-80 transition-opacity text-primary" />
         </Link>
       </li>
     </ul>
