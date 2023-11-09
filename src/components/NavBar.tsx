@@ -16,7 +16,7 @@ export function Header() {
     <header className="relative z-50">
       <nav
         className={clsx(
-          "navbar fixed z-60 bg-base-100 uppercase",
+          "navbar fixed z-60 bg-base-100 text-base-content uppercase",
           !isDropdownOpen && "shadow"
         )}
       >
@@ -54,24 +54,24 @@ export function Header() {
           <ul className="hidden sm:flex ml-auto p-3 gap-6">
             <li
               className={clsx(
-                "hover:underline underline-offset-4 decoration-blue-500 decoration-2",
-                pathname === "/" && "text-blue-500"
+                "hover:underline underline-offset-4 decoration-accent decoration-2",
+                pathname === "/" && "text-accent"
               )}
             >
               <Link href="/">Home</Link>
             </li>
             <li
               className={clsx(
-                "hover:underline underline-offset-4 decoration-blue-500 decoration-2",
-                pathname.includes("/portfolio") && "text-blue-500"
+                "hover:underline underline-offset-4 decoration-accent decoration-2",
+                pathname.includes("/portfolio") && "text-accent"
               )}
             >
               <Link href="/portfolio">Portfolio</Link>
             </li>
             <li
               className={clsx(
-                "hover:underline underline-offset-4 decoration-blue-500 decoration-2",
-                pathname === "/contact" && "text-blue-500"
+                "hover:underline underline-offset-4 decoration-accent decoration-2",
+                pathname === "/contact" && "text-accent"
               )}
             >
               <Link href="/contact">Contact</Link>
@@ -82,10 +82,10 @@ export function Header() {
       {isDropdownOpen && (
         <ul
           tabIndex={0}
-          className="fixed w-full z-60 pt-2 mt-16 p-4 space-y-4 shadow bg-base-100 text-white sm:hidden uppercase"
+          className="fixed w-full z-60 pt-2 mt-16 p-4 space-y-4 shadow  sm:hidden uppercase bg-base-100 text-base-content"
         >
           <li
-            className={clsx("pl-2.5", pathname === "/" && "text-blue-500 py-2")}
+            className={clsx("pl-2.5", pathname === "/" && "text-accent py-2")}
             onClick={() => setIsDropdownOpen(false)}
           >
             <Link href="/">Home</Link>
@@ -94,7 +94,7 @@ export function Header() {
             onClick={() => setIsDropdownOpen(false)}
             className={clsx(
               "pl-2.5",
-              pathname === "/portfolio" && "text-blue-500 py-2"
+              pathname === "/portfolio" && "text-accent py-2"
             )}
           >
             <Link href="/portfolio">Portfolio</Link>
@@ -103,7 +103,7 @@ export function Header() {
             onClick={() => setIsDropdownOpen(false)}
             className={clsx(
               "pl-2.5",
-              pathname === "/contact" && "text-blue-500 py-2"
+              pathname === "/contact" && "text-accent py-2"
             )}
           >
             <Link href="/contact">Contact</Link>
