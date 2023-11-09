@@ -17,7 +17,7 @@ export default function Portfolio() {
             className="max-w-xl group h-[450px]"
           >
             <div className="card card-compact max-w-[384px] w-full bg-base-50 shadow-xl relative h-full">
-              <div className="w-full h-full bg-primary absolute group-hover:opacity-90 opacity-0 flex justify-center items-center flex-col gap-4 top-0 transition-all duration-600">
+              <div className="w-full h-full bg-primary absolute group-hover:opacity-90 hidden opacity-0 sm:flex justify-center items-center flex-col gap-4 top-0 transition-all duration-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
