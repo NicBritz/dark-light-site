@@ -33,7 +33,7 @@ export default function Page({
                   href={item.github}
                   target="_blank"
                   passHref={true}
-                  className="btn btn-primary text-white w-32 uppercase"
+                  className="btn btn-primary w-32 uppercase"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export default function Page({
                   href={item.live}
                   target="_blank"
                   passHref={true}
-                  className="btn btn-primary text-white w-32 uppercase"
+                  className="btn btn-primary w-32 uppercase"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -100,10 +100,7 @@ export default function Page({
       ) : (
         <div className="mb-12 space-y-5 self-center justify-self-center">
           <p>Project not found</p>
-          <Link
-            href="/portfolio"
-            className="btn btn-primary text-white uppercase"
-          >
+          <Link href="/portfolio" className="btn btn-primary uppercase">
             Explore my work
           </Link>
         </div>

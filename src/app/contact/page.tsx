@@ -104,7 +104,7 @@ export default function Contact() {
       />
       <div className="max-w-xl mx-auto">
         <form
-          className="flex flex-col gap-4 w-full bg-base-100 p-6 rounded-lg shadow-lg"
+          className="flex flex-col gap-4 w-full p-6 "
           onSubmit={handleSubmit(onSubmit)}
         >
           <div>

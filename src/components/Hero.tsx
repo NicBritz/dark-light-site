@@ -28,7 +28,7 @@ export function Hero() {
             <Socials />
             <Link
               href="/portfolio"
-              className="btn btn-primary text-white uppercase hover:opacity-80"
+              className="btn btn-primary uppercase hover:opacity-80"
             >
               Explore my work
             </Link>

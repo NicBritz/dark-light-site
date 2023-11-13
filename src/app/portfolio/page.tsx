@@ -14,17 +14,17 @@ export default function Portfolio() {
           <Link
             href={`/portfolio/${item.id}`}
             key={item.id}
-            className="max-w-xl group h-[450px]"
+            className="max-w-xl group h-[500px]"
           >
-            <div className="card card-compact max-w-[384px] w-full bg-base-50 shadow-xl relative h-full">
-              <div className="w-full h-full bg-primary absolute group-hover:opacity-90 hidden opacity-0 sm:flex justify-center items-center flex-col gap-4 top-0 transition-all duration-600">
+            <div className="card card-compact max-w-[384px] w-full shadow-xl relative h-full">
+              <div className="w-full h-full bg-primary absolute group-hover:opacity-90 hidden opacity-0 sm:flex justify-center items-center flex-col gap-8  transition-all duration-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-16 h-16 text-white"
+                  className="w-16 h-16 text-accent"
                 >
                   <path
                     strokeLinecap="round"
@@ -37,7 +37,7 @@ export default function Portfolio() {
                     d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <p className="text-4xl text-white font-bold uppercase">view</p>
+                <p className="text-4xl text-accent font-bold uppercase">view</p>
               </div>
               <figure className="h-[250px] bg-primary">
                 <Image
@@ -52,13 +52,15 @@ export default function Portfolio() {
               <div className="card-body">
                 <h2 className="card-title">{item.title}</h2>
                 <p>{item.shortDescription}</p>
-                <div className="card-actions mt-5">
-                  {item.tech.map((tech, ind) => (
-                    <div key={ind} className="badge badge-neutral">
-                      {tech}
-                    </div>
-                  ))}
-                  <button className="btn btn-primary w-full mt-4 sm:hidden inline-block">
+                <div className=" pt-5">
+                  <div className="flex flex-wrap gap-2">
+                    {item.tech.map((tech, ind) => (
+                      <div key={ind} className="badge badge-neutral">
+                        {tech}
+                      </div>
+                    ))}
+                  </div>
+                  <button className="btn btn-primary w-full mt-4 lg:hidden inline-block">
                     View
                   </button>
                 </div>
